@@ -32,3 +32,4 @@ HELP.md
 /src/main/resources/application-test.properties
 /src/main/resources/application-pre.properties
 /src/main/resources/application-prod.properties
+/src/main/resources/test_data/
