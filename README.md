@@ -67,3 +67,6 @@ SNS消息体：
 ## 参考
 设计文档：
 https://eagle-lab.atlassian.net/wiki/spaces/AWS/pages/144179235/Google-TCL+device+capability+conversion+template+en
+
+## 流程
+![image](https://github.com/Yven-Y/template-poc/blob/master/doc/template-manager.png)
