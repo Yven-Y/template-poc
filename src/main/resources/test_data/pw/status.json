@@ -1,0 +1,96 @@
+{
+  "tclDeviceType": "PW",
+  "GoogleDeviceType": "action.devices.types.Washer",
+  "status": {
+    "fields": [
+      "powerSwitch",
+      "connectStatus",
+      "runningStatus",
+      "washingMode",
+      "washingStatus",
+      "washingTime"
+    ],
+    "powerSwitch": {
+      "targetKeyType": "basic",
+      "targetValueType": "object",
+      "targetKey": "on",
+      "targetValue": {
+        "0": false,
+        "1": true
+      }
+    },
+    "connectStatus": {
+      "targetKeyType": "basic",
+      "targetValueType": "object",
+      "targetKey": "online",
+      "targetValue": {
+        "0": false,
+        "1": true
+      }
+    },
+    "runningStatus": {
+      "targetKeyType": "array-basic",
+      "targetValueType": "array-object",
+      "targetKey": [
+        "isRunning",
+        "isPaused"
+      ],
+      "targetValue": [
+        {
+          "0": false,
+          "2": true
+        },
+        {
+          "1": true
+        }
+      ]
+    },
+    "washingMode": {
+      "targetKeyType": "object",
+      "targetValueType": "object",
+      "targetKey": {
+        "currentModeSettings": "load"
+      },
+      "targetValue": {
+        "1": "Standard",
+        "2": "Blanket",
+        "3": "Delicate",
+        "4": "Quick",
+        "5": "Curtain",
+        "6": "Baby",
+        "7": "Drum Clean",
+        "8": "Drum Drying"
+      },
+      "default": "none"
+    },
+    "washingStatus": {
+      "targetKeyType": "object",
+      "targetValueType": "array-object",
+      "lang": [
+        "en",
+        "zh"
+      ],
+      "targetKey": {
+        "currentRunCycle": "currentCycle"
+      },
+      "targetValue": [
+        {
+          "0": "unStarted",
+          "1": "soak",
+          "2": "wash"
+        },
+        {
+          "0": "未启动",
+          "1": "浸泡",
+          "2": "洗涤"
+        }
+      ]
+    },
+    "washingTime": {
+      "targetKeyType": "basic",
+      "targetValueType": "basic",
+      "targetKey": "currentTotalRemainingTime",
+      "targetValue": ""
+    }
+  }
+}

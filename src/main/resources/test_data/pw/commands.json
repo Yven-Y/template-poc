@@ -1,0 +1,51 @@
+{
+  "tclDeviceType": "PW",
+  "GoogleDeviceType": "action.devices.types.Washer",
+  "commands": {
+    "OnOff": {
+      "on": {
+        "targetKey": "powerSwitch",
+        "targetValue": {
+          "true": "_on",
+          "false": "_off"
+        }
+      }
+    },
+    "StartStop": {
+      "start": {
+        "targetKey": "runningStatus",
+        "targetValue": {
+          "true": "_pause-off",
+          "false": "_pause-on"
+        }
+      }
+    },
+    "PauseUnpause": {
+      "pause": {
+        "targetKey": "runningStatus",
+        "targetValue": {
+          "true": "_pause-on",
+          "false": "_pause-off"
+        }
+      }
+    },
+    "SetModes": {
+      "updateModeSettings": {
+        "targetValueType": "array",
+        "load": {
+          "targetKey": "washingMode",
+          "targetValue": {
+            "Standard": "_standard",
+            "Blanket": "_blanket",
+            "Delicate": "_delicate",
+            "Quick": "_quick",
+            "Curtain": "_curtain",
+            "Baby": "_baby",
+            "Drum Clean": "_drum-clean",
+            "Drum Drying": "_drum-drying"
+          }
+        }
+      }
+    }
+  }
+}

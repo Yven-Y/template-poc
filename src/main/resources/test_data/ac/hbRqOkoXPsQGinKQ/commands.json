@@ -1,0 +1,51 @@
+{
+  "tclDeviceType": "AC",
+  "productKey":"hbRqOkoXPsQGinKQ",
+  "GoogleDeviceType": "action.devices.types.AC_UNIT",
+  "commands": {
+    "OnOff": {
+      "on": {
+        "targetKey": "powerSwitch",
+        "targetValue": {
+          "true": "_on",
+          "false": "_off"
+        }
+      }
+    },
+    "ThermostatTemperatureSetpoint": {
+      "thermostatTemperatureSetpoint": {
+        "targetValueType": "string",
+        "isTemperature": true,
+        "targetKey": "targetTemperature",
+        "targetValue": "_set-temperature"
+      }
+    },
+    "SetFanSpeed": {
+      "fanSpeed": {
+        "targetKey": "windSpeed",
+        "targetValue": {
+          "auto": "_wind-auto",
+          "low": "_low",
+          "middle low": "_middle-low",
+          "middle": "_middle",
+          "middle high": "_middle-high",
+          "high": "_high",
+          "turbo": "_turbo",
+          "mute": "_mute"
+        }
+      }
+    },
+    "ThermostatSetMode": {
+      "thermostatMode": {
+        "targetKey": "workMode",
+        "targetValue": {
+          "auto": "_mode-auto",
+          "cool": "_cool",
+          "dry": "_dry",
+          "fan-only": "_fan-only",
+          "heat": "_heat"
+        }
+      }
+    }
+  }
+}

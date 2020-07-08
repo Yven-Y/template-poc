@@ -1,0 +1,674 @@
+{
+  "tclDeviceType": "AC",
+  "productKey": "SDq2uAanuPReGc3T",
+  "GoogleDeviceType": "actions-list.devices.types.AC_UNIT",
+  "actions": {
+    "_off": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "alreadyOff",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "powerSwitch": 0
+      }
+    },
+    "_on": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyOn",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "powerSwitch": 1
+      }
+    },
+    "_mode-auto": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "workMode": 0,
+        "windSpeed": 0,
+        "targetTemperature": 23,
+        "horizontalSwitch": 0,
+        "verticalSwitch": 0
+      }
+    },
+    "_cool": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "powerSwitch": 1,
+        "workMode": 1,
+        "windSpeed": 0,
+        "targetTemperature": 26,
+        "horizontalSwitch": 0,
+        "verticalSwitch": 0
+      }
+    },
+    "_dry": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            2
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "workMode": 2,
+        "windSpeed": 2,
+        "horizontalSwitch": 0,
+        "verticalSwitch": 0
+      }
+    },
+    "_fan-only": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            3
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "workMode": 3,
+        "windSpeed": 6,
+        "targetTemperature": 23,
+        "horizontalSwitch": 0,
+        "verticalSwitch": 0
+      }
+    },
+    "_heat": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            4
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "workMode": 4,
+        "windSpeed": 0,
+        "targetTemperature": 26,
+        "horizontalSwitch": 0,
+        "verticalSwitch": 0,
+        "PTC": 1
+      }
+    },
+    "_wind-auto": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            2,
+            3
+          ],
+          "errorCode": {
+            "google": "actionNotAvailable",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "windSpeed",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "windSpeed": 0
+      }
+    },
+    "_low": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            2
+          ],
+          "errorCode": {
+            "google": "actionNotAvailable",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "windSpeed",
+          "exist": [
+            2
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "windSpeed": 2
+      }
+    },
+    "_middle": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            2
+          ],
+          "errorCode": {
+            "google": "actionNotAvailable",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "windSpeed",
+          "exist": [
+            4
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "windSpeed": 4
+      }
+    },
+    "_high": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            2
+          ],
+          "errorCode": {
+            "google": "actionNotAvailable",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "windSpeed",
+          "exist": [
+            6
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "windSpeed": 6
+      }
+    },
+    "_set-temperature": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "deviceTurnedOff",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "inAutoMode",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            2
+          ],
+          "errorCode": {
+            "google": "inDryMode",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "workMode",
+          "exist": [
+            3
+          ],
+          "errorCode": {
+            "google": "inFanOnlyMode",
+            "alexa": {
+              "type": "NOT_SUPPORTED_IN_CURRENT_MODE",
+              "currentDeviceMode": "OTHER"
+            }
+          }
+        },
+        {
+          "key": "targetTemperature",
+          "exist": [
+            "equal"
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "targetTemperature",
+          "exist": [
+            "lower"
+          ],
+          "errorCode": {
+            "google": "degreesOutOfRange",
+            "alexa": "TEMPERATURE_VALUE_OUT_OF_RANGE"
+          }
+        },
+        {
+          "key": "targetTemperature",
+          "exist": [
+            "higher"
+          ],
+          "errorCode": {
+            "google": "degreesOutOfRange",
+            "alexa": "TEMPERATURE_VALUE_OUT_OF_RANGE"
+          }
+        }
+      ]
+    }
+  },
+  "temperature": {
+    "fahrenheitTemperatureRange": [
+      61,
+      88
+    ],
+    "celsiusTemperatureRange": [
+      16,
+      31
+    ],
+    "celsiusTemperatureRangeWhenFromFahrenheit": [
+      16.111,
+      31.112
+    ],
+    "temperatureExchangeMap": {
+      "google": {
+        "16": [
+          16,
+          16.11111111,
+          61
+        ],
+        "17": [
+          17,
+          17.22222222,
+          63
+        ],
+        "18": [
+          18,
+          17.777777777778,
+          64
+        ],
+        "19": [
+          19,
+          18.888888888889,
+          66
+        ],
+        "20": [
+          20,
+          20,
+          68
+        ],
+        "21": [
+          21,
+          21.11111111,
+          70
+        ],
+        "22": [
+          22,
+          22.22222222,
+          72
+        ],
+        "23": [
+          23,
+          23.33333333,
+          73
+        ],
+        "24": [
+          24,
+          24.44444444,
+          75
+        ],
+        "25": [
+          25,
+          25,
+          77
+        ],
+        "26": [
+          26,
+          26.111111111111,
+          79
+        ],
+        "27": [
+          27,
+          27.22222222,
+          81
+        ],
+        "28": [
+          28,
+          27.77777778,
+          82
+        ],
+        "29": [
+          29,
+          28.88888889,
+          84
+        ],
+        "30": [
+          30,
+          30,
+          86
+        ],
+        "31": [
+          31,
+          31.11111111,
+          88
+        ],
+        "16.5": [
+          16,
+          16.66666667,
+          62
+        ],
+        "17.5": [
+          17,
+          17.22222222,
+          63
+        ],
+        "18.5": [
+          18,
+          18.33333333,
+          65
+        ],
+        "19.5": [
+          19,
+          19.44444444,
+          67
+        ],
+        "20.5": [
+          20,
+          20.55555556,
+          69
+        ],
+        "21.5": [
+          21,
+          21.666666666667,
+          71
+        ],
+        "22.5": [
+          23,
+          22.77777778,
+          72
+        ],
+        "23.5": [
+          24,
+          23.888888888889,
+          74
+        ],
+        "24.5": [
+          24,
+          24.44444444,
+          76
+        ],
+        "25.5": [
+          25,
+          25.55555556,
+          78
+        ],
+        "26.5": [
+          26,
+          26.66666667,
+          80
+        ],
+        "27.5": [
+          27,
+          27.22222222,
+          81
+        ],
+        "28.5": [
+          28,
+          28.33333333,
+          83
+        ],
+        "29.5": [
+          29,
+          29.444444444444,
+          85
+        ],
+        "30.5": [
+          30,
+          30.55555556,
+          87
+        ]
+      },
+      "alexa": {
+        "16": 61,
+        "17": 63,
+        "18": 64,
+        "19": 66,
+        "20": 68,
+        "21": 70,
+        "22": 72,
+        "23": 73,
+        "24": 75,
+        "25": 77,
+        "26": 79,
+        "27": 81,
+        "28": 82,
+        "29": 84,
+        "30": 86,
+        "31": 88,
+        "16.5": 62,
+        "17.5": 63,
+        "18.5": 65,
+        "19.5": 67,
+        "20.5": 69,
+        "21.5": 71,
+        "22.5": 72,
+        "23.5": 74,
+        "24.5": 76,
+        "25.5": 78,
+        "26.5": 80,
+        "27.5": 81,
+        "28.5": 83,
+        "29.5": 85,
+        "30.5": 87
+      }
+    }
+  }
+}

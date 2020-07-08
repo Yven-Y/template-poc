@@ -1,0 +1,414 @@
+{
+  "id": "",
+  "type": "action.devices.types.AC_UNIT",
+  "traits": [
+    "action.devices.traits.OnOff",
+    "action.devices.traits.FanSpeed",
+    "action.devices.traits.TemperatureSetting"
+  ],
+  "name": {
+    "defaultNames": [
+      "TCL AC unit"
+    ],
+    "name": "TCL AC unit",
+    "nicknames": [
+      "TCL AC unit",
+      "Air Conditioner",
+      "AC unit"
+    ]
+  },
+  "willReportState": true,
+  "attributes": {
+    "commandOnlyOnOff": false,
+    "availableFanSpeeds": {
+      "speeds": [
+        {
+          "speed_name": "auto",
+          "speed_values": [
+            {
+              "speed_synonym": [
+                "auto",
+                "auto fan",
+                "automatic fan speed"
+              ],
+              "lang": "en"
+            },
+            {
+              "speed_synonym": [
+                "ต่ำ",
+                "พัดลมต่ำ",
+                "พัดลมความเร็วต่ำ",
+                "กระแสลมต่ำ"
+              ],
+              "lang": "th"
+            },
+            {
+              "speed_synonym": [
+                "Automatik",
+                "Lüfter automatisch"
+              ],
+              "lang": "de"
+            },
+            {
+              "speed_synonym": [
+                "auto",
+                "autoblæser",
+                "automatisk blæserhastighed"
+              ],
+              "lang": "da"
+            },
+            {
+              "speed_synonym": [
+                "auto",
+                "auto ventilator",
+                "automatische ventilatorsnelheid"
+              ],
+              "lang": "nl"
+            },
+            {
+              "speed_synonym": [
+                "auto",
+                "ventilateur auto",
+                "vitesse automatique du ventilateur"
+              ],
+              "lang": "fr"
+            },
+            {
+              "speed_synonym": [
+                "auto",
+                "ventilazione automatica",
+                "velocità ventilazione automatica"
+              ],
+              "lang": "it"
+            },
+            {
+              "speed_synonym": [
+                "auto",
+                "automatisk vifte",
+                "automatisk vifte hastighet"
+              ],
+              "lang": "no"
+            },
+            {
+              "speed_synonym": [
+                "automático",
+                "ventilador automático",
+                "velocidad automática del ventilador"
+              ],
+              "lang": "es"
+            },
+            {
+              "speed_synonym": [
+                "automatisk",
+                "automatisk fläkt",
+                "automatisk fläkthastighet"
+              ],
+              "lang": "sv"
+            },
+            {
+              "speed_synonym": [
+                "automática",
+                "ventoínha automática",
+                "velocidade de ventoínha automática"
+              ],
+              "lang": "pt-BR"
+            }
+          ]
+        },
+        {
+          "speed_name": "low",
+          "speed_values": [
+            {
+              "speed_synonym": [
+                "low",
+                "low fan",
+                "low fan speed"
+              ],
+              "lang": "en"
+            },
+            {
+              "speed_synonym": [
+                "กลางถึงต่ำ",
+                "พัดลมกลางถึงต่ำ",
+                "พัดลมความเร็วกลางถึงต่ำ"
+              ],
+              "lang": "th"
+            },
+            {
+              "speed_synonym": [
+                "niedrig",
+                "Lüfter niedrig",
+                "Lüftergeschwindigkeit niedrig"
+              ],
+              "lang": "de"
+            },
+            {
+              "speed_synonym": [
+                "lav",
+                "lav blæser",
+                "lav blæserhastighed"
+              ],
+              "lang": "da"
+            },
+            {
+              "speed_synonym": [
+                "laag",
+                "lage ventilator",
+                "lage ventilatorsnelheid"
+              ],
+              "lang": "nl"
+            },
+            {
+              "speed_synonym": [
+                "faible",
+                "ventilateur faible",
+                "vitesse de ventilateur faible"
+              ],
+              "lang": "fr"
+            },
+            {
+              "speed_synonym": [
+                "basso",
+                "ventilazione bassa",
+                "bassa velocità di ventilazione"
+              ],
+              "lang": "it"
+            },
+            {
+              "speed_synonym": [
+                "lav",
+                "lav vifte",
+                "lav vifte hastighet"
+              ],
+              "lang": "no"
+            },
+            {
+              "speed_synonym": [
+                "bajo",
+                "ventilador bajo",
+                "velocidad baja del ventilador"
+              ],
+              "lang": "es"
+            },
+            {
+              "speed_synonym": [
+                "låg",
+                "låg fläkt",
+                "låg fläkthastighet",
+                "lågt luftflöde"
+              ],
+              "lang": "sv"
+            },
+            {
+              "speed_synonym": [
+                "baixo",
+                "ventoínha baixa",
+                "velocidade de ventoínha baixa"
+              ],
+              "lang": "pt-BR"
+            }
+          ]
+        },
+        {
+          "speed_name": "middle",
+          "speed_values": [
+            {
+              "speed_synonym": [
+                "middle",
+                "medium fan",
+                "medium fan speed"
+              ],
+              "lang": "en"
+            },
+            {
+              "speed_synonym": [
+                "กลาง",
+                "พัดลมปานกลาง",
+                "ความเร็วพัดลมปานกลาง"
+              ],
+              "lang": "th"
+            },
+            {
+              "speed_synonym": [
+                "mittlerer",
+                "mittlerer Lüfter",
+                "mittlere Lüftergeschwindigkeit"
+              ],
+              "lang": "de"
+            },
+            {
+              "speed_synonym": [
+                "mellem",
+                "mellemventilator",
+                "mellemventilatorhastighed"
+              ],
+              "lang": "da"
+            },
+            {
+              "speed_synonym": [
+                "midden",
+                "gemiddelde ventilator",
+                "gemiddelde ventilatorsnelheid"
+              ],
+              "lang": "nl"
+            },
+            {
+              "speed_synonym": [
+                "moyen",
+                "ventilateur moyen",
+                "vitesse moyenne du ventilateur"
+              ],
+              "lang": "fr"
+            },
+            {
+              "speed_synonym": [
+                "medio",
+                "medio ventola",
+                "medio velocità della ventola"
+              ],
+              "lang": "it"
+            },
+            {
+              "speed_synonym": [
+                "mellomstor",
+                "mellomstor vifte",
+                "middels viftehastighet"
+              ],
+              "lang": "no"
+            },
+            {
+              "speed_synonym": [
+                "medio",
+                "ventilador medio",
+                "velocidad media del ventilador"
+              ],
+              "lang": "es"
+            },
+            {
+              "speed_synonym": [
+                "medel",
+                "medelhög fläkt",
+                "medelhög fläkt"
+              ],
+              "lang": "sv"
+            },
+            {
+              "speed_synonym": [
+                "médio",
+                "ventilador médio",
+                "velocidade média do ventilador"
+              ],
+              "lang": "pt-BR"
+            }
+          ]
+        },
+        {
+          "speed_name": "high",
+          "speed_values": [
+            {
+              "speed_synonym": [
+                "high",
+                "high fan",
+                "high fan speed"
+              ],
+              "lang": "en"
+            },
+            {
+              "speed_synonym": [
+                "สูง",
+                "พัดลมสูง",
+                "พัดลมความเร็วสูง"
+              ],
+              "lang": "th"
+            },
+            {
+              "speed_synonym": [
+                "hoch",
+                "Lüfter hoch",
+                "Lüftergeschwindigkeit hoch"
+              ],
+              "lang": "de"
+            },
+            {
+              "speed_synonym": [
+                "høj",
+                "høj blæser",
+                "høj blæserhastighed"
+              ],
+              "lang": "da"
+            },
+            {
+              "speed_synonym": [
+                "hoog",
+                "hoge ventilator",
+                "hoge ventilatorsnelheid"
+              ],
+              "lang": "nl"
+            },
+            {
+              "speed_synonym": [
+                "élevé",
+                "ventilateur fort",
+                "vitesse de ventilateur élevée"
+              ],
+              "lang": "fr"
+            },
+            {
+              "speed_synonym": [
+                "alto",
+                "ventilazione alta",
+                "velocità ventilazione alta"
+              ],
+              "lang": "it"
+            },
+            {
+              "speed_synonym": [
+                "høy",
+                "høy vifte",
+                "høy vifte hastighet"
+              ],
+              "lang": "no"
+            },
+            {
+              "speed_synonym": [
+                "alto",
+                "ventilador alto",
+                "velocidad alta del ventilador"
+              ],
+              "lang": "es"
+            },
+            {
+              "speed_synonym": [
+                "hög",
+                "hög fläkt",
+                "hög fläkthastighet"
+              ],
+              "lang": "sv"
+            },
+            {
+              "speed_synonym": [
+                "alto",
+                "ventoínha alta",
+                "velocidade de ventoínha alta"
+              ],
+              "lang": "pt-BR"
+            }
+          ]
+        }
+      ],
+      "ordered": true
+    },
+    "reversible": false,
+    "availableThermostatModes": "cool,heat,fan-only,dry,auto",
+    "thermostatTemperatureUnit": "C",
+    "commandOnlyTemperatureSetting": false,
+    "queryOnlyTemperatureSetting": false
+  },
+  "deviceInfo": {
+    "manufacturer": "",
+    "model": "",
+    "hwVersion": "",
+    "swVersion": ""
+  },
+  "customData": {}
+}

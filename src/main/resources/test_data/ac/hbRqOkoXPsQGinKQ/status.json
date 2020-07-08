@@ -1,0 +1,118 @@
+{
+  "tclDeviceType": "AC",
+  "productKey": "hbRqOkoXPsQGinKQ",
+  "GoogleDeviceType": "action.devices.types.AC_UNIT",
+  "status": {
+    "fields": [
+      "powerSwitch",
+      "connectStatus",
+      "windSpeed",
+      "silenceSwitch",
+      "turbo",
+      "workMode",
+      "currentTemperature",
+      "targetTemperature"
+    ],
+    "temperatureExchangeMap": {
+      "16": [16, 16.11111111, 61],
+      "16.5": [16, 16.66666667, 62],
+      "17": [17, 17.22222222, 63],
+      "17.5": [17, 17.22222222, 63],
+      "18": [18, 17.777777777778, 64],
+      "18.5": [18, 18.33333333, 65],
+      "19": [19, 18.888888888889, 66],
+      "19.5": [19, 19.44444444, 67],
+      "20": [20, 20, 68],
+      "20.5": [20, 20.55555556, 69],
+      "21": [21, 21.11111111, 70],
+      "21.5": [21, 21.666666666667, 71],
+      "22": [22, 22.22222222, 72],
+      "22.5": [23, 22.77777778, 72],
+      "23": [23, 23.33333333, 73],
+      "23.5": [24, 23.888888888889, 74],
+      "24": [24, 24.44444444, 75],
+      "24.5": [24, 24.44444444, 76],
+      "25": [25, 25, 77],
+      "25.5": [25, 25.55555556, 78],
+      "26": [26, 26.111111111111, 79],
+      "26.5": [26, 26.66666667, 80],
+      "27": [27, 27.22222222, 81],
+      "27.5": [27, 27.22222222, 81],
+      "28": [28, 27.77777778, 82],
+      "28.5": [28, 28.33333333, 83],
+      "29": [29, 28.88888889, 84],
+      "29.5": [29, 29.444444444444, 85],
+      "30": [30, 30, 86],
+      "30.5": [30, 30.55555556, 87],
+      "31": [31, 31.11111111, 88]
+    },
+    "powerSwitch": {
+      "targetKeyType": "string",
+      "targetValueType": "object",
+      "targetKey": "on",
+      "targetValue": {
+        "0": false,
+        "1": true
+      }
+    },
+    "connectStatus": {
+      "targetKeyType": "string",
+      "targetValueType": "object",
+      "targetKey": "online",
+      "targetValue": {
+        "0": false,
+        "1": true
+      }
+    },
+    "windSpeed": {
+      "targetKeyType": "string",
+      "targetValueType": "object",
+      "targetKey": "currentFanSpeedSetting",
+      "targetValue": {
+        "0": "auto", "2": "low", "3": "middle low", "4": "middle", "5": "middle high", "6": "high"
+      }
+    },
+    "silenceSwitch": {
+      "targetKeyType": "string",
+      "targetValueType": "object",
+      "targetKey": "currentFanSpeedSetting",
+      "targetValue": {
+        "1": "mute"
+      }
+    },
+    "turbo": {
+      "targetKeyType": "string",
+      "targetValueType": "object",
+      "targetKey": "currentFanSpeedSetting",
+      "targetValue": {
+        "1": "turbo"
+      }
+    },
+    "workMode": {
+      "targetKeyType": "string",
+      "targetValueType": "object",
+      "targetKey": "thermostatMode",
+      "targetValue": {
+        "0": "auto",
+        "1": "cool",
+        "2": "dry",
+        "3": "fan-only",
+        "4": "heat"
+      }
+    },
+    "currentTemperature": {
+      "targetKeyType": "string",
+      "targetValueType": "string",
+      "isTemperature": true,
+      "targetKey": "thermostatTemperatureAmbient",
+      "targetValue": ""
+    },
+    "targetTemperature": {
+      "targetKeyType": "string",
+      "targetValueType": "string",
+      "isTemperature": true,
+      "targetKey": "thermostatTemperatureSetpoint",
+      "targetValue": ""
+    }
+  }
+}

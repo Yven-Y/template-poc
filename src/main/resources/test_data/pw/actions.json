@@ -1,0 +1,466 @@
+{
+  "tclDeviceType": "PW",
+  "GoogleDeviceType": "action.devices.types.Washer",
+  "actions": {
+    "_off": {
+      "errorStatus": [
+        {
+          "key": "powerSwitch",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "alreadyOff",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            5
+          ],
+          "errorCode": {
+            "google": "actionNotAvailable",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "powerSwith": 0
+      }
+    },
+    "_on": {
+      "errorStatus": [
+        {
+          "key": "powerSwith",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyOn",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            5
+          ],
+          "errorCode": {
+            "google": "actionNotAvailable",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "powerSwith": 1
+      }
+    },
+    "_pause-on": {
+      "errorStatus": [
+        {
+          "key": "runningStatus",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyPaused",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "runningStatus",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "actionNotAvailable",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "runningStatus": 1
+      }
+    },
+    "_pause-off": {
+      "errorStatus": [
+        {
+          "key": "runningStatus",
+          "exist": [
+            2
+          ],
+          "errorCode": {
+            "google": "alreadyStarted",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "runningStatus",
+          "exist": [
+            0
+          ],
+          "errorCode": {
+            "google": "actionNotAvailable",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "runningStatus": 2
+      }
+    },
+    "_standard": {
+      "errorStatus": [
+        {
+          "key": "washingMode",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            2,
+            3,
+            4
+          ],
+          "errorCode": {
+            "google": "actionUnavailableWhileRunning",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "washingMode": 1
+      }
+    },
+    "_blanket": {
+      "errorStatus": [
+        {
+          "key": "washingMode",
+          "exist": [
+            2
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            2,
+            3,
+            4
+          ],
+          "errorCode": {
+            "google": "actionUnavailableWhileRunning",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "washingMode": 2
+      }
+    },
+    "_delicate": {
+      "errorStatus": [
+        {
+          "key": "washingMode",
+          "exist": [
+            3
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            2,
+            3,
+            4
+          ],
+          "errorCode": {
+            "google": "actionUnavailableWhileRunning",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "washingMode": 3
+      }
+    },
+    "_quick": {
+      "errorStatus": [
+        {
+          "key": "washingMode",
+          "exist": [
+            4
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            2,
+            3,
+            4
+          ],
+          "errorCode": {
+            "google": "actionUnavailableWhileRunning",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "washingMode": 4
+      }
+    },
+    "_curtain": {
+      "errorStatus": [
+        {
+          "key": "washingMode",
+          "exist": [
+            5
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            2,
+            3,
+            4
+          ],
+          "errorCode": {
+            "google": "actionUnavailableWhileRunning",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "washingMode": 5
+      }
+    },
+    "_baby": {
+      "errorStatus": [
+        {
+          "key": "washingMode",
+          "exist": [
+            6
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            2,
+            3,
+            4
+          ],
+          "errorCode": {
+            "google": "actionUnavailableWhileRunning",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "washingMode": 6
+      }
+    },
+    "_drum-clean": {
+      "errorStatus": [
+        {
+          "key": "washingMode",
+          "exist": [
+            7
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            2,
+            3,
+            4
+          ],
+          "errorCode": {
+            "google": "actionUnavailableWhileRunning",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "washingMode": 7
+      }
+    },
+    "_drum-drying": {
+      "errorStatus": [
+        {
+          "key": "washingMode",
+          "exist": [
+            8
+          ],
+          "errorCode": {
+            "google": "alreadyInState",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "childLock",
+          "exist": [
+            1
+          ],
+          "errorCode": {
+            "google": "alreadyLocked",
+            "alexa": ""
+          }
+        },
+        {
+          "key": "washingStatus",
+          "exist": [
+            2,
+            3,
+            4
+          ],
+          "errorCode": {
+            "google": "actionUnavailableWhileRunning",
+            "alexa": ""
+          }
+        }
+      ],
+      "action": {
+        "washingMode": 8
+      }
+    }
+  }
+}
